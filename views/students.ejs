@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+    <h1>All Students</h1>
+    <ul>
+        <% students.forEach(student => { %>
+            <li>
+                <strong><%= student.name %></strong> - Grade: <%= student.grade %>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
